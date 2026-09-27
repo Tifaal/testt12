@@ -1,0 +1,36 @@
+<html>
+    <body>
+        <form method="post">
+            <table border="1">
+                <tr>
+                    <td><h1>Калькулятор опыта майнкрафт</h1></td>
+                </tr>
+                <tr>
+                    <td>Имеющийся уровень:</td>
+                    <td><input type="number", name="level_current"></td>
+                </tr>
+                <tr>
+                    <td>Желаемый уровень</td>
+                    <td><input type="number", name="level_target"></td>
+                </tr>                
+                <tr>
+                    <td colspan="2"><input type="submit", value="Посчитать"></td>
+                </tr>
+            </table>
+        </form>
+        <table border="1">
+            <tr>
+                <td>Current XP</td>
+                <td>{{level_current}}</td>
+            </tr>
+            <tr>
+                <td>Target XP</td>
+                <td>{{level_target}}</td>
+            </tr>
+            <tr>
+                <td>XP remaining</td>
+                <td>{{need_xp}}</td>
+            </tr>
+        </table>
+    </body>
+</html>
